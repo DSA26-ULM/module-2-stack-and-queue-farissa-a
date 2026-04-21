@@ -38,3 +38,10 @@ int front(const Queue* q) {
     if (isEmpty(q)) throw std::runtime_error("Queue Empty");
     return *(q->front);
 }
+
+int back(const Queue* q) {
+    if (isEmpty(q)) {
+        throw std::runtime_error("Queue Empty");
+    }
+    return *(q->rear);
+}
